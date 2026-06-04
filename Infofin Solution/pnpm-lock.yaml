@@ -19,7 +19,7 @@ catalogs:
       specifier: ^4.1.14
       version: 4.3.0
     '@tanstack/react-query':
-      specifier: ^5.90.21
+      specifier: ^5.101.0
       version: 5.101.0
     '@types/node':
       specifier: ^25.3.3
@@ -77,6 +77,10 @@ overrides:
 importers:
 
   .:
+    dependencies:
+      '@tanstack/react-query':
+        specifier: 'catalog:'
+        version: 5.101.0(react@19.1.0)
     devDependencies:
       '@rollup/rollup-win32-x64-msvc':
         specifier: ^4.60.4
@@ -551,7 +555,7 @@ importers:
   lib/api-zod:
     dependencies:
       zod:
-        specifier: 'catalog:'
+        specifier: ^3.25.76
         version: 3.25.76
 
 packages:
