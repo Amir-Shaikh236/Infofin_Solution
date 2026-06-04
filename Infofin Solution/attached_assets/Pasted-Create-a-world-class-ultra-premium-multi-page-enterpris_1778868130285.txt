@@ -1,0 +1,328 @@
+Create a world-class ultra-premium multi-page enterprise website and SaaS platform for “Infofin Solutions LLP”, an India-based company that combines:
+
+* Financial Services
+* GST & Taxation
+* Bookkeeping & Accounting
+* Audit Support
+* ERP Solutions
+* Inventory Management
+* Billing Software
+* CRM Systems
+* Payroll Software
+* AI Automation
+* Business Technology Solutions
+
+IMPORTANT:
+Infofin is NOT a Chartered Accountant firm. It provides business support services, compliance assistance, audit support, ERP software, automation systems, and technology-enabled finance solutions for startups, MSMEs, enterprises, retailers, manufacturers, agencies, and modern businesses.
+
+The website should feel like a premium combination of:
+
+* Stripe
+* Apple
+* Zoho
+* Razorpay
+* Linear
+* Framer
+* Deloitte
+* Freshworks
+* Notion
+* Vercel
+
+MAIN DESIGN STYLE
+
+* Ultra-modern SaaS UI
+* Premium enterprise design
+* Light theme luxury interface
+* Minimalistic fintech aesthetics
+* Glassmorphism effects
+* Smooth animations
+* Cinematic interactions
+* Floating dashboard cards
+* Clean whitespace layouts
+* Premium typography
+* AI-tech inspired visuals
+* Enterprise-grade branding
+
+COLOR THEME (IMPORTANT)
+Use a LIGHT THEME only.
+
+Primary Colors:
+
+* Pure White Background
+* Soft Blue Gradients
+* Light Sky Blue
+* Soft Cyan
+* Very Light Gray
+* Elegant Silver
+* Soft Gold accents
+
+NO dark website theme.
+
+The UI should feel:
+
+* Clean
+* Expensive
+* Modern
+* Premium
+* Smooth
+* Corporate
+* Tech-focused
+* Futuristic but minimal
+
+WEBSITE STRUCTURE
+
+Pages:
+
+* Home
+* About Us
+* Services
+* GST & Taxation
+* Audit Support
+* ERP Solutions
+* Software Products
+* Inventory Management
+* AI Automation
+* Industries
+* Blog
+* Careers
+* Contact
+* Client Portal
+* Admin Dashboard
+
+HOMEPAGE HERO SECTION
+
+Headline:
+“Smart Finance & Business Technology Solutions for Modern Businesses”
+
+Subheadline:
+“From GST Filing & Audit Support to ERP, Inventory, Billing & AI Automation — Infofin helps businesses simplify operations and scale faster.”
+
+CTA Buttons:
+
+* Book Free Consultation
+* Explore Software
+* Request Demo
+
+Add:
+
+* Animated dashboard preview
+* Floating analytics cards
+* Real-time graphs
+* ERP visuals
+* Inventory charts
+* AI widgets
+* Smooth motion effects
+
+SERVICES SECTION
+
+1. GST & TAXATION
+
+* GST Registration
+* GST Filing
+* GST Audit Support
+* GST Notice Handling
+* E-Invoice
+* E-Way Bill
+* TDS Filing
+* Income Tax Filing
+* Tax Consultancy
+* Tax Planning
+
+2. BOOKKEEPING & ACCOUNTING
+
+* Daily Bookkeeping
+* Accounting Management
+* Ledger Maintenance
+* Balance Sheet
+* P&L Statements
+* Bank Reconciliation
+* Expense Tracking
+* Financial Reporting
+
+3. AUDIT SUPPORT
+
+* Internal Audit
+* Tax Audit Support
+* Stock Audit
+* Compliance Audit
+* Audit Documentation
+
+4. ERP & SOFTWARE
+
+* ERP Software
+* Billing Software
+* Inventory Management
+* CRM System
+* Payroll Software
+* GST Software
+* Accounting Software
+* Multi-Branch Management
+
+5. AI & AUTOMATION
+
+* AI Accounting Assistant
+* Smart GST Alerts
+* Workflow Automation
+* Smart Invoice Scanner
+* AI Analytics Dashboard
+* Real-Time Monitoring
+
+6. BUSINESS REGISTRATION
+
+* LLP Registration
+* Pvt Ltd Registration
+* MSME Registration
+* Startup India
+* Trademark Assistance
+* ROC Compliance
+
+WEBSITE FEATURES
+
+* Multi-page architecture
+* Smooth page transitions
+* Ultra-premium animations
+* Floating UI effects
+* Scroll animations
+* Hover glow interactions
+* Glassmorphism cards
+* Sticky modern navbar
+* Interactive mega menu
+* SaaS dashboard visuals
+* Dynamic content sections
+* SEO optimized
+* Mobile responsive
+* Fast loading
+* AI-inspired graphics
+* Interactive charts
+* Animated counters
+* Live business metrics
+
+ADMIN PANEL (FULLY FUNCTIONAL)
+
+Create a complete admin dashboard with CMS-like functionality.
+
+Admin Features:
+
+* Admin Login
+* Dashboard Analytics
+* Add/Edit/Delete Services
+* Add/Edit/Delete Software Products
+* Manage Contact Leads
+* Manage Consultation Bookings
+* Manage Blog Posts
+* Manage Careers
+* Upload Images/PDFs
+* Manage Testimonials
+* Dynamic Website Content
+* Inquiry Status Tracking
+* Lead Management
+* Client Database
+* Dynamic Categories
+* Homepage Editor
+
+CONSULTATION SYSTEM
+
+Create working forms for:
+
+* Book Consultation
+* Contact Inquiry
+* Demo Request
+* Software Inquiry
+
+Store data inside:
+
+* Consultation database
+* Contact leads collection
+
+Fields:
+
+* Name
+* Company Name
+* Email
+* Phone
+* Service Interested In
+* Message
+* Date
+* Status
+
+TECH STACK
+
+Frontend:
+
+* Next.js
+* Tailwind CSS
+* Framer Motion
+* TypeScript
+
+Backend:
+
+* Node.js
+* Express.js
+
+Database:
+
+* MongoDB
+
+Authentication:
+
+* JWT Login System
+
+Uploads:
+
+* Cloudinary Integration
+
+CMS:
+
+* Dynamic admin-controlled system
+
+SPECIAL UI REQUIREMENTS
+
+Animations:
+
+* Smooth page reveal
+* Floating dashboard motion
+* Parallax scrolling
+* Hover animations
+* Loading transitions
+* Animated gradients
+* Glassmorphism hover effects
+* Card tilt effects
+* Interactive buttons
+
+Typography:
+
+* Inter
+* Satoshi
+* SF Pro Display
+
+Use premium enterprise spacing and layouts.
+
+INDUSTRIES SERVED
+
+* Retail
+* Manufacturing
+* E-commerce
+* Agencies
+* Healthcare
+* Restaurants
+* Startups
+* Logistics
+* Education
+* Professional Services
+
+FINAL GOAL
+
+The website should look like a billion-dollar AI-powered SaaS company combining:
+Finance + ERP + GST + Inventory + Audit Support + AI Automation + Business Technology
+
+The final result should feel:
+
+* Extremely premium
+* Enterprise-level
+* Modern SaaS
+* Investor-ready
+* Corporate luxury
+* Better than most agency websites
+* Similar quality to Stripe or Apple websites
+
+The website must be fully responsive, fully functional, visually stunning, scalable, and production-ready.
