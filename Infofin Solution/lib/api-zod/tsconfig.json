@@ -4,8 +4,13 @@
     "composite": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": false,
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }

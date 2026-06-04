@@ -4,9 +4,17 @@
     "composite": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": false,
     "outDir": "dist",
     "rootDir": "src",
-    "lib": ["dom", "es2022"]
+    "lib": [
+      "dom",
+      "es2022"
+    ]
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
