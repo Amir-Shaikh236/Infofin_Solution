@@ -51,13 +51,13 @@ export default function Navbar() {
       <div className="hidden lg:flex bg-slate-50 border-b border-slate-100 py-1.5">
         <div className="max-w-7xl mx-auto w-full px-6 flex justify-between items-center">
           <div className="flex items-center gap-6 text-xs text-slate-500">
-            <a href="mailto:info@infofinllp.com" className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+            <a href="mailto:Info@infofinsolutions.com" className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
               <Mail className="w-3 h-3" />
-              info@infofinllp.com
+              Info@infofinsolutions.com
             </a>
-            <a href="tel:+919876543210" className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+            <a href="tel:+917758891773" className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
               <Phone className="w-3 h-3" />
-              +91 98765 43210
+              +91 77588 91773
             </a>
           </div>
           <span className="text-xs text-slate-500">Mon – Sat: 9:00 AM – 6:00 PM IST</span>

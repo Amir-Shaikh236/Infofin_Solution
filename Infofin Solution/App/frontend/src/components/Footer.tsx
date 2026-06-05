@@ -102,18 +102,18 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex gap-3 text-slate-400 text-sm">
                 <MapPin className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
-                <span>123, Business Park, Andheri East,<br />Mumbai, Maharashtra 400069</span>
+                <span>I-2 105 Amits Colori Undri, Near Atur Nagar<br />Pune, Maharashtra 411060</span>
               </li>
               <li>
-                <a href="tel:+919876543210" className="flex gap-3 text-slate-400 hover:text-white text-sm transition-colors">
+                <a href="tel:+917758891773" className="flex gap-3 text-slate-400 hover:text-white text-sm transition-colors">
                   <Phone className="w-4 h-4 text-blue-500 shrink-0" />
-                  +91 98765 43210
+                  +91 77588 91773
                 </a>
               </li>
               <li>
-                <a href="mailto:info@infofinllp.com" className="flex gap-3 text-slate-400 hover:text-white text-sm transition-colors">
+                <a href="mailto:Info@infofinsolutions.com" className="flex gap-3 text-slate-400 hover:text-white text-sm transition-colors">
                   <Mail className="w-4 h-4 text-blue-500 shrink-0" />
-                  info@infofinllp.com
+                  Info@infofinsolutions.com
                 </a>
               </li>
             </ul>
