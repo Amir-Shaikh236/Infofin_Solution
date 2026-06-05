@@ -49,7 +49,7 @@ export default defineConfig({
     // THE FIX: Proxy all /api calls to your Backend on port 5000
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: `${process.env.VITE_API_URL || 'http://localhost:5000'}`,
         changeOrigin: true,
         secure: false,
       },
