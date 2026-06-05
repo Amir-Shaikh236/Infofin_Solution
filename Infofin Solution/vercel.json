@@ -1,6 +1,8 @@
 {
     "cleanUrls": true,
     "trailingSlash": false,
+    "buildCommand": "cd App/frontend && npm run build",
+    "outputDirectory": "App/frontend/dist",
     "rewrites": [
         {
             "source": "/((?!api).*)",
