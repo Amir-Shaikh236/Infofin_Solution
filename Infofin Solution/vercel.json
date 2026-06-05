@@ -1,9 +1,10 @@
 {
     "cleanUrls": true,
+    "trailingSlash": false,
     "rewrites": [
         {
             "source": "/((?!api/).*)",
-            "destination": "/App/frontend/index.html"
+            "destination": "/Infofin Solution/App/frontend/dist/public/index.html"
         }
     ]
 }
