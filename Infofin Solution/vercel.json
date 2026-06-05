@@ -1,9 +1,10 @@
 {
     "cleanUrls": true,
+    "trailingSlash": false,
     "rewrites": [
         {
             "source": "/((?!api/).*)",
-            "destination": "/index.html"
+            "destination": "/App/frontend/dist/public/index.html"
         }
     ]
 }
