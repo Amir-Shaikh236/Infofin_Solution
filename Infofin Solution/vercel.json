@@ -3,8 +3,8 @@
     "trailingSlash": false,
     "rewrites": [
         {
-            "source": "/((?!api/).*)",
-            "destination": "/Infofin Solution/App/frontend/dist/public/index.html"
+            "source": "/((?!api).*)",
+            "destination": "/index.html"
         }
     ]
 }
