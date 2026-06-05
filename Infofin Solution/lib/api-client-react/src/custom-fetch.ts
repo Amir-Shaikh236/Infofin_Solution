@@ -15,12 +15,14 @@ const DEFAULT_JSON_ACCEPT = "application/json, application/problem+json";
 // Module-level configuration
 // ---------------------------------------------------------------------------
 
-// Detect Vercel Production environments dynamically
-const isProduction = import.meta.env.PROD;
+// Safely pull env parameters using a loose record definition to bypass compiler checks
+const globalMeta = import.meta as Record<string, any>;
+const metaEnv = globalMeta.env || {};
+const isProduction = Boolean(metaEnv.PROD);
 
-// AUTOMATION: If live on Vercel, use your Render link. If local, leave null so Vite Proxy works.
+// AUTOMATION: Points cleanly to your verified custom API subdomain on Render
 let _baseUrl: string | null = isProduction
-  ? (import.meta.env.VITE_API_URL || "https://your-backend-app.onrender.com").replace(/\/+$/, "")
+  ? (metaEnv.VITE_API_URL || "https://api.infofinsolutions.com").replace(/\/+$/, "")
   : null;
 
 let _authTokenGetter: AuthTokenGetter | null = null;
