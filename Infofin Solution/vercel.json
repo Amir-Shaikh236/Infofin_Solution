@@ -3,7 +3,7 @@
     "rewrites": [
         {
             "source": "/((?!api/).*)",
-            "destination": "/App/frontend/dist/index.html"
+            "destination": "/index.html"
         }
     ]
 }
