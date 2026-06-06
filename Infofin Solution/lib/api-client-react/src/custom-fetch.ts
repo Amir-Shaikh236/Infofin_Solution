@@ -18,7 +18,7 @@ const DEFAULT_JSON_ACCEPT = "application/json, application/problem+json";
 // Safely pull env parameters using a loose record definition to bypass compiler checks
 const globalMeta = import.meta as Record<string, any>;
 const metaEnv = globalMeta.env || {};
-const isProduction = Boolean(metaEnv.PROD);
+const isProduction = true;
 
 // AUTOMATION: Points cleanly to your verified custom API subdomain on Render
 let _baseUrl: string | null = isProduction
