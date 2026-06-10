@@ -67,7 +67,6 @@ export default function AdminLogin() {
               {login.isPending ? "Signing in..." : "Sign In to Dashboard"}
             </button>
           </form>
-          <p className="text-center text-xs text-slate-400 mt-5">Default: admin / admin123</p>
         </div>
       </motion.div>
     </div>

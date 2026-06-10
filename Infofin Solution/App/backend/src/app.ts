@@ -6,7 +6,6 @@ import router from "./routes";
 import { logger } from "./lib/logger";
 
 const app: Express = express();
-
 const isProd = process.env.NODE_ENV === "production";
 
 const allowedOrigins = [
@@ -15,7 +14,6 @@ const allowedOrigins = [
   "https://www.infofinsolutions.com",
   "https://api.infofinsolutions.com",
 ];
-
 
 app.use(
   pinoHttp({
@@ -37,36 +35,33 @@ app.use(
   }),
 );
 
-
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow local testing tools or matched domains
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
-        callback(new Error("Not allowed by CORS policy"));
+        callback(new Error(`CORS blocked for origin: ${origin}`));
       }
     },
     credentials: true,
-  })
+  }),
 );
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 2. Configure Subdomain-safe Session Mapping
 app.use(
   session({
     secret: process.env.SESSION_SECRET ?? "infofin-dev-secret-2024",
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: true,           // must be true since sameSite: "none"
-      httpOnly: true,         // add this for security
-      maxAge: 24 * 60 * 60 * 1000,
-      sameSite: "none",       // required for cross-subdomain
-      domain: ".infofinsolutions.com",  // leading dot covers all subdomains
+      httpOnly: true,                          // Prevents JS access to cookie
+      secure: isProd,                          // HTTPS only in production
+      sameSite: isProd ? "none" : "lax",       // "none" required for cross-subdomain
+      domain: isProd ? ".infofinsolutions.com" : undefined, // Shared across all subdomains
+      maxAge: 24 * 60 * 60 * 1000,            // 1 day
     },
   }),
 );
