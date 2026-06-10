@@ -12,7 +12,8 @@ const isProd = process.env.NODE_ENV === "production";
 const allowedOrigins = [
   "http://localhost:5173",
   "https://infofinsolutions.com",
-  "https://www.infofinsolutions.com"
+  "https://www.infofinsolutions.com",
+  "https://api.infofinsolutions.com",
 ];
 
 
@@ -61,10 +62,11 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: isProd, // Must be true on HTTPS production
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
-      sameSite: isProd ? "none" : "lax", // Crucial block bypass for cross-subdomain contexts
-      domain: isProd ? ".infofinsolutions.com" : undefined, // Wildcard dot shares sessions across app paths
+      secure: true,           // must be true since sameSite: "none"
+      httpOnly: true,         // add this for security
+      maxAge: 24 * 60 * 60 * 1000,
+      sameSite: "none",       // required for cross-subdomain
+      domain: ".infofinsolutions.com",  // leading dot covers all subdomains
     },
   }),
 );
