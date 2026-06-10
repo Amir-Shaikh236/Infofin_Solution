@@ -151,9 +151,9 @@ export default function Navbar() {
 
         {/* CTA buttons */}
         <div className="hidden lg:flex items-center gap-2">
-          <Link href="/client-portal" className="px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors rounded-lg hover:bg-slate-100">
+          {/* <Link href="/client-portal" className="px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors rounded-lg hover:bg-slate-100">
             Client Portal
-          </Link>
+          </Link> */}
           <Link href="/book-consultation" className="px-4 py-2 text-sm font-semibold bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all shadow-sm hover:shadow-md">
             Book Consultation
           </Link>

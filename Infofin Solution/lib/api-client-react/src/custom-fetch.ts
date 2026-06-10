@@ -18,12 +18,14 @@ const DEFAULT_JSON_ACCEPT = "application/json, application/problem+json";
 // Safely pull env parameters using a loose record definition to bypass compiler checks
 const globalMeta = import.meta as Record<string, any>;
 const metaEnv = globalMeta.env || {};
-const isProduction = true;
+// Dynamically detect if the current window is running on a local development server
+const isLocalhost = typeof window !== "undefined" &&
+  (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
 
-// AUTOMATION: Points cleanly to your verified custom API subdomain on Render
-let _baseUrl: string | null = isProduction
-  ? (metaEnv.VITE_API_URL || "https://api.infofinsolutions.com").replace(/\/+$/, "")
-  : null;
+// AUTOMATION: Use local relative paths/proxy on localhost, force custom subdomain on live production
+let _baseUrl: string | null = isLocalhost
+  ? null
+  : "https://api.infofinsolutions.com";
 
 let _authTokenGetter: AuthTokenGetter | null = null;
 

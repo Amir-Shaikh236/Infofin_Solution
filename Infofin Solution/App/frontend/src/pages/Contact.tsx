@@ -8,9 +8,9 @@ const fadeUp = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, tra
 const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
 
 const contactInfo = [
-  { icon: MapPin, label: "Our Office", value: "123, Business Park, Andheri East, Mumbai, Maharashtra 400069" },
-  { icon: Phone, label: "Phone", value: "+91 98765 43210" },
-  { icon: Mail, label: "Email", value: "info@infofinllp.com" },
+  { icon: MapPin, label: "Our Office", value: "I-2 105 Amits Colori Undri, Near Atur Nagar,Pune, Maharashtra 411060" },
+  { icon: Phone, label: "Phone", value: "+91 77588 91773" },
+  { icon: Mail, label: "Email", value: "Info@infofinsolutions.com" },
   { icon: Clock, label: "Business Hours", value: "Monday – Saturday: 9:00 AM – 6:00 PM IST" },
 ];
 

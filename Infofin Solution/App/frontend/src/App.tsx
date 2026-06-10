@@ -19,7 +19,7 @@ import BlogPost from "@/pages/BlogPost";
 import Careers from "@/pages/Careers";
 import Contact from "@/pages/Contact";
 import BookConsultation from "@/pages/BookConsultation";
-import ClientPortal from "@/pages/ClientPortal";
+// import ClientPortal from "@/pages/ClientPortal";
 import NotFound from "@/pages/not-found";
 
 import AdminLogin from "@/pages/admin/AdminLogin";
@@ -74,7 +74,7 @@ function Router() {
       <Route path="/careers" component={Careers} />
       <Route path="/contact" component={Contact} />
       <Route path="/book-consultation" component={BookConsultation} />
-      <Route path="/client-portal" component={ClientPortal} />
+      {/* <Route path="/client-portal" component={ClientPortal} /> */}
 
       {/* Admin routes — all behind auth guard */}
       <Route path="/admin">
