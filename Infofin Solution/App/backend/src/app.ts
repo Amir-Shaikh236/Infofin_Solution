@@ -56,12 +56,13 @@ app.use(
     secret: process.env.SESSION_SECRET ?? "infofin-dev-secret-2024",
     resave: false,
     saveUninitialized: false,
+    proxy: isProd, // CRITICAL: Tells express to trust Render's reverse proxy header to pass cookies over HTTPS
     cookie: {
-      httpOnly: true,                          // Prevents JS access to cookie
-      secure: isProd,                          // HTTPS only in production
-      sameSite: isProd ? "none" : "lax",       // "none" required for cross-subdomain
-      domain: isProd ? ".infofinsolutions.com" : undefined, // Shared across all subdomains
-      maxAge: 24 * 60 * 60 * 1000,            // 1 day
+      secure: isProd,
+      maxAge: 24 * 60 * 60 * 1000,
+      sameSite: isProd ? "none" : "lax",
+      // Remove the strict hardcoded domain parameter to let the browser automatically
+      // scope the storage boundary cleanly to whichever site address you are visiting!
     },
   }),
 );
