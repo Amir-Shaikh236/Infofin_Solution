@@ -24,7 +24,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
   const handleLogout = async () => {
     await logout.mutateAsync({});
-    qc.invalidateQueries({ queryKey: getGetAdminMeQueryKey() });
+    qc.clear();
+    await qc.invalidateQueries({ queryKey: getGetAdminMeQueryKey() });
     navigate("/admin");
   };
 
