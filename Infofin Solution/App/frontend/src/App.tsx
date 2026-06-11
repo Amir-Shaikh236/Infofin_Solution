@@ -30,6 +30,7 @@ import AdminBlog from "@/pages/admin/AdminBlog";
 import AdminCareers from "@/pages/admin/AdminCareers";
 import AdminTestimonials from "@/pages/admin/AdminTestimonials";
 import AdminServices from "@/pages/admin/AdminServices";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -58,6 +59,7 @@ function AdminGuard({ children }: { children: ReactNode }) {
 
 function Router() {
   return (
+
     <Switch>
       {/* Public pages */}
       <Route path="/" component={Home} />
@@ -128,6 +130,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+          <ScrollToTop />
           <Router />
         </WouterRouter>
         <Toaster />

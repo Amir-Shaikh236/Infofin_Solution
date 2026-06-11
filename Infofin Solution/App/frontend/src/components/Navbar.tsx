@@ -40,11 +40,16 @@ export default function Navbar() {
     setServicesOpen(false);
   }, [location]);
 
+  const isInnerPage = location !== "/";
+
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "nav-blur border-b border-slate-100 shadow-sm" : "bg-transparent"
+        // When scrolled OR on an inner page, apply the solid background with a clean blur effect
+        scrolled || isInnerPage
+          ? "bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm"
+          : "bg-transparent"
       )}
     >
       {/* Top bar */}
