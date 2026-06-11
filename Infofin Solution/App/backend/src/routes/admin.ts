@@ -12,14 +12,14 @@ function hashPassword(password: string): string {
 }
 
 async function ensureAdminExists() {
-  const [existing] = await db.select().from(adminsTable).where(eq(adminsTable.username, "admin")).limit(1);
+  const [existing] = await db.select().from(adminsTable).where(eq(adminsTable.username, "masha")).limit(1);
   if (!existing) {
     await db.insert(adminsTable).values({
-      username: "admin",
-      passwordHash: hashPassword("admin123"),
+      username: "masha",
+      passwordHash: hashPassword("masha@23639"),
       role: "admin",
     });
-    logger.info("Default admin user created");
+    // logger.info("Default admin user created");
   }
 }
 
