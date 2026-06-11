@@ -59,10 +59,10 @@ export default function About() {
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "500+", label: "Active Clients", color: "bg-blue-50 border-blue-100" },
-                  { value: "10+", label: "Years Experience", color: "bg-cyan-50 border-cyan-100" },
+                  { value: "50+", label: "Active Clients", color: "bg-blue-50 border-blue-100" },
+                  { value: "2+", label: "Years Experience", color: "bg-cyan-50 border-cyan-100" },
                   { value: "50+", label: "Team Members", color: "bg-violet-50 border-violet-100" },
-                  { value: "99%", label: "Satisfaction Rate", color: "bg-emerald-50 border-emerald-100" },
+                  { value: "95%", label: "Satisfaction Rate", color: "bg-emerald-50 border-emerald-100" },
                 ].map((s) => (
                   <div key={s.label} className={`rounded-2xl p-8 border ${s.color} text-center`}>
                     <p className="text-4xl font-extrabold gradient-text mb-2">{s.value}</p>

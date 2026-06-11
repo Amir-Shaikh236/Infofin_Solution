@@ -38,10 +38,10 @@ const serviceCategories = [
 ];
 
 const stats = [
-  { value: 500, suffix: "+", label: "Happy Clients" },
-  { value: 10, suffix: "+", label: "Years Experience" },
+  { value: 50, suffix: "+", label: "Happy Clients" },
+  { value: 2, suffix: "+", label: "Years Experience" },
   { value: 50, suffix: "+", label: "Expert Team" },
-  { value: 99, suffix: "%", label: "Client Satisfaction" },
+  { value: 95, suffix: "%", label: "Client Satisfaction" },
 ];
 
 const industries = [
@@ -77,7 +77,7 @@ export default function Home() {
             <motion.div variants={fadeUp}>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                Trusted by 500+ Businesses Across India
+                Trusted by 50+ Businesses Across India
               </span>
             </motion.div>
             <motion.h1 variants={fadeUp} className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.05] tracking-tight mb-6">
